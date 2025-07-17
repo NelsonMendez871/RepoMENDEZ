@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedido - DS3 Comunicaciones</title>
+  <link rel="stylesheet" href="pedido-styles.css">
+</head>
+<body>
+  <header>
+    <h1>Pedido en Línea – DS3 Comunicaciones E.I.R.L.</h1>
+    <p>Para pedidos urgentes llámanos: (+51) 533-4339 / 99653-3223</p>
+  </header>
+  
+  <main>
+    <form action="mailto:ventas@ds3comunicaciones.com" method="POST" enctype="text/plain" class="pedido-form">
+      <fieldset>
+        <legend>Datos de Contacto</legend>
+        <label>Nombre:<input type="text" name="Nombre" required></label>
+        <label>Empresa:<input type="text" name="Empresa"></label>
+        <label>Teléfono fijo:<input type="tel" name="TelefonoFijo"></label>
+        <label>Teléfono celular:<input type="tel" name="TelefonoCelular"></label>
+        <label>Email:<input type="email" name="Email" required></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Detalles del Pedido</legend>
+        <label>RUC:<input type="text" name="RUC"></label>
+        <label>Dirección:<input type="text" name="Direccion"></label>
+        <label>Ciudad:<input type="text" name="Ciudad"></label>
+        <label>Departamento:<input type="text" name="Departamento"></label>
+        <label>País:<input type="text" name="Pais"></label>
+        <label>Cantidad:<input type="number" name="Cantidad" required></label>
+        <label>Detalle/Producto/Modelo:<textarea name="Detalle" rows="3"></textarea></label>
+        <label>Comentarios:<textarea name="Comentarios" rows="4" required></textarea></label>
+      </fieldset>
+
+      <div class="buttons">
+        <button type="submit">Enviar Pedido</button>
+        <button type="reset">Limpiar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DS3 Comunicaciones E.I.R.L.</p>
+  </footer>
+</body>
+</html>
